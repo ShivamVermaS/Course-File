@@ -6,13 +6,17 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="Courses")
 public class Courses {
 
 	@Id
 	long id ;
 	String Name;
 
+
+	
+	String Course;
+	double Fee;
+	
 	public Courses(long id, String name, String Course, double Fee) {
 		super();
 		this.id = id;
@@ -21,9 +25,6 @@ public class Courses {
 		this.Fee=Fee;
 	}
 	
-	
-	String Course;
-	double Fee;
 	public Courses() {
 		super();
 		// TODO Auto-generated constructor stub

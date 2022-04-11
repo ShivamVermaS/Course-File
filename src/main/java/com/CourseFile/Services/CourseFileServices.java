@@ -34,6 +34,12 @@ public class CourseFileServices implements CourseFileInterface {
 		
 		return coursedao.getOne(courseId);
 	}
+	
+//	@Override
+//	public Courses getcourseName(String course) {
+//		
+//		return coursedao.getOne(course);
+//	}
 
 	@Override
 	public Courses addcourse(Courses course) {
@@ -52,6 +58,12 @@ public class CourseFileServices implements CourseFileInterface {
 	public void deleteCourses(long parselong) {
 		Courses entity=coursedao.getOne(parselong);
 		coursedao.delete(entity);
+	}
+
+	@Override
+	public Courses getcourseName(String course) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

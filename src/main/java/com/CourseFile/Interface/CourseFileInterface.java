@@ -19,4 +19,6 @@ public interface CourseFileInterface {
 	
 	public void deleteCourses(long parselong);
 
+	Courses getcourseName(String course);
+
 }

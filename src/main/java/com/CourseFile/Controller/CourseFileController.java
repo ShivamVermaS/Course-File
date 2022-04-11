@@ -41,6 +41,13 @@ public	CourseFileServices cfs;
 		return this.cfs.getcourse(Long.parseLong(courseId));
 	}
 	
+	//get single course by Name
+	@GetMapping("/course/{course}")
+	public Courses getCourseName(@PathVariable String course)
+	{
+		return this.cfs.getcourseName(course);
+	}
+	
 	// course add
 	@PostMapping("/courses")
 	public Courses addCourses(@RequestBody Courses courses)

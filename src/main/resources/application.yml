@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://sv578807.database.windows.net:1433;database=Course-file;user=sv578807@sv578807;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: sv578807 
+    password: Sv123456#
+  
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernet.dialect.SQLServer2012Dialect
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+      
+     
+server:
+  port: 8071
